@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Elor Israeli/Ex2_Java</OriginalElement>
+  <nodes>
+    <node x="386.2924548553567" y="328.72641444628584">TaskType</node>
+    <node x="343.2924548553567" y="-77.25977811933802">Task</node>
+    <node x="-678.0974141114041" y="-80.6406031307155">Ex2_1</node>
+    <node x="-182.44876737736035" y="353.596621987137">Tests</node>
+    <node x="38.980314960629926" y="196.13498742046568">MyFutureTask</node>
+    <node x="-550.509842519685" y="196.13498742046565">MyCallable</node>
+    <node x="-156.66141732283472" y="-77.25977811933802">CustomExecutor</node>
+    <node x="-762.007874015748" y="196.13498742046565">MyThread</node>
+    <node x="-340.01380743437596" y="196.13498742046568">CustomExecutorComparator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Ex2_1" target="MyCallable" relationship="CREATE">
+      <point x="87.0" y="-93.5" />
+      <point x="-461.5974141114041" y="213.6349874204656" />
+      <point x="-475.509842519685" y="213.6349874204656" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="CustomExecutor" target="CustomExecutorComparator" relationship="CREATE">
+      <point x="-6.75" y="-105.0" />
+      <point x="-25.911417322834723" y="75.74022188066198" />
+      <point x="-71.51380743437596" y="75.74022188066198" />
+      <point x="130.5" y="38.5" />
+    </edge>
+    <edge source="CustomExecutor" target="MyFutureTask" relationship="CREATE">
+      <point x="130.0" y="-105.0" />
+      <point x="110.83858267716528" y="92.74022188066198" />
+      <point x="148.23031496062993" y="92.74022188066198" />
+      <point x="-7.25" y="72.5" />
+    </edge>
+    <edge source="Task" target="TaskType" relationship="TO_ONE">
+      <point x="0.0" y="-138.5" />
+      <point x="484.7924548553567" y="-38.951592405910986" />
+      <point x="446.8229892065017" y="-38.951592405910986" />
+      <point x="446.8229892065017" y="-51.19477670253042" />
+      <point x="484.7924548553567" y="-51.19477670253042" />
+      <point x="0.0" y="94.0" />
+    </edge>
+    <edge source="Ex2_1" target="MyThread" relationship="CREATE">
+      <point x="-87.0" y="-93.5" />
+      <point x="-635.5974141114041" y="155.4469952944814" />
+      <point x="-683.007874015748" y="155.4469952944814" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="Tests" target="CustomExecutor" relationship="CREATE">
+      <point x="0.0" y="-49.5" />
+      <point x="-105.94876737736035" y="328.1477021956225" />
+      <point x="-19.161417322834723" y="328.1477021956225" />
+      <point x="0.0" y="105.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5530759951749096" showDependencies="true" x="33.6161395856052" y="339.1515812431843" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
