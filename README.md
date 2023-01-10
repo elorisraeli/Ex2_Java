@@ -10,6 +10,10 @@ In this project we create a Task class which simulate the tasks that need to be 
 Task will implemet callable that we will be able to return some object from the task.
 CustomExecuter will present the priority queue to execute task by the priority number. 
 
+## Diagrams
+![Ex2_Java](https://user-images.githubusercontent.com/53333654/211675776-b8632a1e-63ea-463e-94ef-ecf66bdc95bf.png)
+
+
 There is also a Test class to test the classes.
 ## Get Started
 To run by yourself the code, click on the green table with the text "Code", then click "download ZIP".
