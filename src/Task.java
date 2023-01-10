@@ -27,7 +27,7 @@ public class Task<T> implements Callable<T> {
      * @param callable the callable task to be executed
      * @return the Task
      */
-    public static <T> Task<T> createTask(Callable<T> callable){ // section 3 + 4
+    public static <T> Task<T> createTask(Callable<T> callable){
         TaskFactory<T> taskFactory = new TaskFactory<T>();
         return taskFactory.createTask(callable);
     }
@@ -38,7 +38,7 @@ public class Task<T> implements Callable<T> {
      * @param taskType the type of the task
      * @return the Task
      */
-    public static <T> Task<T> createTask(Callable<T> callable, TaskType taskType) { // section 3 + 4
+    public static <T> Task<T> createTask(Callable<T> callable, TaskType taskType) {
         TaskFactory<T> taskFactory = new TaskFactory<T>();
         return taskFactory.createTask(callable, taskType);
     }

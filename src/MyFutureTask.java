@@ -45,7 +45,7 @@ public class MyFutureTask<T> extends FutureTask<T> implements Comparable<MyFutur
      *                  -1 if the priority of the task is less than the priority of the other task
      *                  0 if the priority of the task is equal to the priority of the other task
      */
-    public int compareTo(MyFutureTask<T> otherTask) { // section 5
+    public int compareTo(MyFutureTask<T> otherTask) {
         if (this.priority > otherTask.priority) {
             return 1;
         } else if (this.priority < otherTask.priority) {

@@ -10,7 +10,7 @@ import java.util.concurrent.*;
 public class CustomExecutor  extends ThreadPoolExecutor {
 
     private int currentMaxPriority;// the current max priority of the tasks in the queue
-    private HashMap<Integer, Integer> priorityHashMap = new HashMap<>(); // section 7
+    private HashMap<Integer, Integer> priorityHashMap = new HashMap<>();
 
     /**
      * Creates a new CustomExecutor that will, upon running, execute the given
@@ -29,7 +29,7 @@ public class CustomExecutor  extends ThreadPoolExecutor {
      * @param taskType the type of the task
      * @return the Task that was submitted
      */
-    public <T> Future<T> submit(Callable<T> callable, TaskType taskType){ // section 2
+    public <T> Future<T> submit(Callable<T> callable, TaskType taskType){
         if (callable == null) {
             throw new NullPointerException("Callable is null");
         }
@@ -51,7 +51,7 @@ public class CustomExecutor  extends ThreadPoolExecutor {
      * @param callable the task to submit
      * @return the Task that was submitted
      */
-    public <T> Future<T> submit(Callable<T> callable) { // section 3
+    public <T> Future<T> submit(Callable<T> callable) {
         if (callable == null) {
             throw new NullPointerException("Callable is null");
         }
@@ -98,7 +98,7 @@ public class CustomExecutor  extends ThreadPoolExecutor {
      * function to get the current max priority of the tasks in the queue
      * @return the current max priority of the tasks in the queue
      */
-    public int getCurrentMax() { // section 10
+    public int getCurrentMax() {
         return this.currentMaxPriority;
     }
 
