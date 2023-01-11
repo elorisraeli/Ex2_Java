@@ -20,6 +20,14 @@ public class MyFutureTask<T> extends FutureTask<T> implements Comparable<MyFutur
         this.priority = priority;
     }
 
+    public MyFutureTask(Task<T> task) {
+        super(task.getCallable());
+        this.priority = task.getPriority();
+    }
+
+
+
+
     /**
      * returns the priority of the task
      * @return the priority of the task

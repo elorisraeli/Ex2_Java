@@ -46,7 +46,7 @@ public class CustomExecutor extends ThreadPoolExecutor {
         }
         Task<T> task = Task.createTask(callable, taskType);
         this.priorityHashMap.put(task.getPriority(), this.priorityHashMap.get(task.getPriority()) + 1);
-        MyFutureTask<T> myFutureTask = new MyFutureTask<T>(callable, taskType.getPriorityValue());
+        MyFutureTask<T> myFutureTask = new MyFutureTask<T>(task);
         super.execute(myFutureTask);
         return myFutureTask;
     }
@@ -63,7 +63,7 @@ public class CustomExecutor extends ThreadPoolExecutor {
         }
         Task<T> task = Task.createTask(callable);
         this.priorityHashMap.put(task.getPriority(), this.priorityHashMap.get(task.getPriority()) + 1);
-        MyFutureTask<T> myFutureTask = new MyFutureTask<T>(callable, task.getPriority());
+        MyFutureTask<T> myFutureTask = new MyFutureTask<T>(task);
         super.execute(myFutureTask);
         return myFutureTask;
     }

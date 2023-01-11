@@ -65,13 +65,6 @@ public class Task<T> implements Callable<T> {
         return (Callable<T>) this.callable;
     }
 
-    /**
-     * this function is to return the callable task to be executed
-     * @return the callable task to be executed
-     */
-    public <T> Callable<T> setCallable(Callable<T> callable){
-        return (Callable<T>) this.callable;
-    }
 
     @Override
     /**
