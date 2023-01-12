@@ -59,5 +59,6 @@ Go to your path where you download the file and extract the files to your comput
 
 ## Usage
 To see how the communication between the classes works you can run the Tests class and to understand by the code the details.
+For part 1 is important to know that the system will ask you if you want to operate the program, by typing "y" the program create 1000 files in your folder.
 ## Contributing
 Elor Israeli and Roni Micheali
