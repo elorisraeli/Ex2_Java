@@ -29,7 +29,15 @@ getNumOfLinesThreads function: create threads of MyThread class and execute them
 getNumOfLinesThreadPool function: create threads of MyCallable class and get all in the "pool" until its max size, 
 when threads are done, anothers get in the pool and replace them.
 
-![Ex2_Part1_Diagram](https://user-images.githubusercontent.com/53333654/211759929-2cf82be0-e5a9-4461-8daa-89b067e30c1d.png)
+Lets get to the point: Who is faster? by running the program and execute 1000 tasks of create file and enter data indise,
+the ouptput times shows that the function without the threads and the threadpool is the faster,
+this is because the system decide which how to divide the execution of the task and optimize the best.
+After that the 2nd faster is the threadpool! This is because the cost of the creation of the threads and the destoying of them is expensive,
+therefore, with 1000 missions like that, threadpool optimize the threads by the option to reuse thread after finish task, while the threads
+are created and destroyed each time.
+To sum up: 1st fast is the system, 2nd fast is the threadpool, and the last is threads. 
+
+![Ex2_Part1_Diagram](https://user-images.githubusercontent.com/53333654/212181648-cf4f88fa-87bd-43fa-b116-0368f41ccbd7.png)
 
 
 ## Part B
@@ -41,7 +49,7 @@ We decide to use PriorityBlockingQueue to order the threads by their priority nu
 CustomExecutorComparator class implements Comprator: use to compare MyFutureTask objects by their priority.
 TaskType is enum class: define the priority of the threads, by 1 to 10 when lower number is high priority.
 
-![Ex2_Part2_Diagrams](https://user-images.githubusercontent.com/53333654/211759965-32dc5422-09aa-4319-b856-0d67bcdbd4c2.png)
+![Ex2_Part2_Diagram](https://user-images.githubusercontent.com/53333654/212181678-99982651-08db-4277-8b43-3d572ed7a4f7.png)
 
 
 
