@@ -20,6 +20,11 @@ public class MyFutureTask<T> extends FutureTask<T> implements Comparable<MyFutur
         this.priority = priority;
     }
 
+    /**
+     * Creates a new FutureTask that will, upon running, execute the given
+     *
+     * @param task the task to submit
+     */
     public MyFutureTask(Task<T> task) {
         super(task.getCallable());
         this.priority = task.getPriority();
